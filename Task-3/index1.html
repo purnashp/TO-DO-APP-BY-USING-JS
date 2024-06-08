@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO-APP</title>
+    <link rel="stylesheet" href="./style1.css">
+</head>
+<body>
+    <h1>TO-DO-APP</h1>
+    <div class="container">
+        <form action=""  id="form">
+            <input type="hidden" id="userId" />
+
+            <input type="text"  id="name" placeholder="enter user name ">
+            <input type="number" id="age" placeholder="enter user age">
+            <input type="text" id="place" placeholder="enter user from">
+            <button type="submit">Add/Update</button>
+
+        </form>
+    </div>
+    <table border="1" >
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>age</th>
+                <th>place</th>
+                <th>edit</th>
+                <th>delete</th>
+            </tr>
+        </thead>
+        <tbody id="tablebody">
+
+        </tbody>
+    </table>
+    <script src="./script1.js"></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(45deg, #03c790, #1a49c9);
+}
+
+body h1 {
+    text-align: center;
+    font-family: monospace;
+    color: aliceblue;
+    font-weight: 600;
+    text-shadow: 3px -3px 1px rgb(1, 18, 74);
+    font-size: 30px;
+    transition: all 1s;
+    padding: 10px;
+}
+
+body h1:hover {
+    color: rgb(114, 207, 237);
+
+}
+
+.container {
+    height: 20vh;
+    width: 80%;
+    margin: 5vh auto;
+    background: rgba(255, 255, 255, 0.18);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(254, 252, 252, 0.1);
+    backdrop-filter: blur(8.1px);
+    -webkit-backdrop-filter: blur(8.1px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form{
+    height: 10vh;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+form input{
+    height: 4vh;
+    width: 25%;
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 1px white;
+    outline: none;
+    font-size: 15px;
+    color: white;
+    font-family: monospace;
+}
+form input:focus{
+  border-bottom:  solid 2px orange;
+}
+form input::placeholder{
+    padding-left: 5px;
+    text-transform: capitalize;
+    color: black;
+}
+form button{
+    height: 5vh;
+    width: 10%;
+    border-radius: 20px;
+    background-color: rgb(0, 255, 149);
+    border: #1a49c9;
+}
+
+form button:active{
+    transform: scale(1.08);
+}
+table{
+    margin: auto;
+    width: 70%;
+}
+table thead{
+    height: 5vh;
+    color: linen;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+table td{
+    text-align: center;
+    padding: 5px;
+    color: rgb(30, 221, 255);
+    text-transform: capitalize;
+}
+.edit{
+    background-color: transparent;
+    border: none;
+    color: rgb(255, 166, 0);
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.delete{
+    background-color: transparent;
+    border: none;
+    color: rgb(255, 0, 0);
+    font-size: 15px;
+    font-weight: 800;
+    cursor: pointer;
+}
